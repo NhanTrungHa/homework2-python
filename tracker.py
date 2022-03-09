@@ -1,9 +1,9 @@
 def func_counter(func):
 
     # allows for passing of arguments and keyword arguments to wrapper, args is for y
-    def wrapper(y):
+    def wrapper(*args):
         wrapper.counter += 1
-        func(y)
+        func(*args)
     wrapper.counter = 0
     return wrapper
 
