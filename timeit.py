@@ -1,13 +1,15 @@
 import time
 
+
 def calculate_time(func):
     def wrapper():
         start = time.time()
         func()
         end = time.time()
-        total = end-start
-        print("Total time ", total)
+        print("Total time ", end - start)
+
     return wrapper
+
 
 @calculate_time
 def test_funct():
@@ -15,6 +17,3 @@ def test_funct():
 
 
 test_funct()
-
-
-
