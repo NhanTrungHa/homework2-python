@@ -6,11 +6,12 @@ data_text = data.read()
 
 split = data_text.split()
 
-Counter = Counter(split)
 
-occurrences = Counter.most_common(5)
+#Counter = Counter(split)
 
-output = list(occurrences)
+#occurrences = Counter.most_common(5)
+
+#output = list(occurrences)
 
 for i in output:
     print(i)
