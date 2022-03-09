@@ -1,5 +1,3 @@
-from collections import Counter
-
 data = open("document.txt", "r", encoding="utf8")
 
 data_text = data.read()
@@ -13,21 +11,10 @@ for i in split:
     else:
         test_dict[i] += 1
 
-test_dict = sorted(test_dict.items(), key=lambda x: x[1])
-test_dict.reverse()
+output = sorted(test_dict.items(), key=lambda x: x[1])
+output.reverse()
 
-
-pairs = test_dict
 for i in range(5):
-    print(test_dict[i])
-
-
-#Counter = Counter(split)
-
-#occurrences = Counter.most_common(5)
-
-#output = list(occurrences)
-
-
+    print(output[i])
 
 data.close()
