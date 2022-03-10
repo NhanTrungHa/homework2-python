@@ -17,4 +17,4 @@ output = sorted(output, key=lambda x: x[0])
 output = sorted(output, key=lambda x: x[1], reverse=True)
 
 for i in range(5):
-    print(output[i])
+    print(output[i][0]+ ": ", output[i][1])
