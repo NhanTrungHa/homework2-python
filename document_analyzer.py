@@ -21,4 +21,4 @@ for i in range(5):
 
 data.close()
 
-assert True
+assert False
