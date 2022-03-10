@@ -11,12 +11,10 @@ for i in split:
     else:
         test_dict[i] += 1
 
-
 output = sorted(test_dict.items(), key=lambda x: x[1])
 output.reverse()
-output = sorted(output, key=lambda x: x[0])
-output = sorted(output, key=lambda x: x[1], reverse=True)
-
+# output = sorted(output, key=lambda x: x[0])
+# output = sorted(output, key=lambda x: x[1], reverse=True)
 
 
 for i in range(5):
