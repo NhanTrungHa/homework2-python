@@ -12,7 +12,7 @@ for i in split:
         test_dict[i] += 1
 
 
-output = sorted(test_dict.items(), key=lambda x: x[1], reverse=True)
+output = sorted(test_dict.items(), key=lambda x: x[1])
 output = sorted(output, key=lambda x: x[0])
 output = sorted(output, key=lambda x: x[1], reverse=True)
 
