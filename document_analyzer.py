@@ -18,7 +18,3 @@ output = sorted(output, key=lambda x: x[1], reverse=True)
 
 for i in range(5):
     print(output[i])
-
-data.close()
-
-assert False
