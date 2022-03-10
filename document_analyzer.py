@@ -16,5 +16,6 @@ output.reverse()
 output = sorted(output, key=lambda x: x[0])
 output = sorted(output, key=lambda x: x[1], reverse=True)
 
+print(" ")
 for i in range(5):
     print(output[i][0]+ ": ", output[i][1])
