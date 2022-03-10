@@ -13,9 +13,11 @@ for i in split:
 
 
 output = sorted(test_dict.items(), key=lambda x: x[1])
-output = output.reverse()
-#output = sorted(output, key=lambda x: x[0])
-#output = sorted(output, key=lambda x: x[1], reverse=True)
+output.reverse()
+output = sorted(output, key=lambda x: x[0])
+output = sorted(output, key=lambda x: x[1], reverse=True)
+
+
 
 for i in range(5):
     print(output[i])
