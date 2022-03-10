@@ -11,12 +11,10 @@ for i in split:
     else:
         test_dict[i] += 1
 
-test_dict = sorted(test_dict.items(), key=lambda x: x[1])
-test_dict.reverse()
+output = sorted(test_dict.items(), key=lambda x: x[1])
+output.reverse()
+output = sorted(output, key=lambda x: x[0])
+output = sorted(output, key=lambda x: x[1], reverse=True)
 
-
-pairs = test_dict
 for i in range(5):
-    print(test_dict[i])
-
-data.close()
+    print(output[i][0]+ ": ", output[i][1])
